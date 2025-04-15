@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy Coding Projects</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="loader">
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <!-- Header -->
+  <div class="header-bar">
+    <div class="hamburger" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="logo">E-Resources</div>
+    <div class="theme-toggle" onclick="toggleTheme()">
+      <div class="theme-switch"></div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <h2>Quick Links</h2>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="projects.html"><i class="fas fa-laptop-code"></i> Projects</a>
+    <a href="notes.html"><i class="fas fa-sticky-note"></i> Notes</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <div class="header" id="home">
+      <h1>Buy Coding Projects Instantly</h1>
+      <section class="typing-section">
+        <p class="typed-text">
+          Get your notes and Projects
+        </p>
+      </section>
+      <a href="notes.html" class="btn-main">Notes</a>
+      <a href="projects.html" class="btn-main">Projects</a>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Latest Projects</h2>
+      <div class="projects" id="latest-projects">
+        <!-- Projects will be loaded from JSON -->
+      </div>
+      <a href="projects.html" class="see-more-btn">See More</a>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes">
+      <h2>Notes</h2>
+      <div class="projects" id="latest-notes">
+        <!-- Notes will be loaded from JSON -->
+      </div>
+      
+      <a href="notes.html" class="see-more-btn">See More</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="card contact-card">
+        <h3><i class="fas fa-address-book"></i> Get in Touch</h3>
+        <p><i class="fas fa-user"></i> Name: <strong>CodeWizard</strong></p>
+        <p><i class="fas fa-envelope"></i> Email: <strong>eresources@gamil.com</strong></p>
+        <p><i class="fas fa-phone-alt"></i> Phone: <strong>+91 98765 43210</strong></p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: <strong>New Delhi, India</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="/assets/js/script.js">
+  </script>
+</body>
+
+</html>
